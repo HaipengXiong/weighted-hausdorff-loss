@@ -21,6 +21,9 @@
 }
 ```
 
+  ## Examples
+  <img src="https://raw.githubusercontent.com/javiribera/weighted-hausdorff-loss/master/fig/collage34.png" width="600" alt="Results and estimated object centers"    />
+
   ## Datasets
   The datasets used in the paper can be downloaded from these links:
   - [Mall dataset](http://personal.ie.cuhk.edu.hk/~ccloy/downloads_mall_dataset.html)
