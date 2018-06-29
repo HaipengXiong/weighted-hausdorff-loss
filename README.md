@@ -33,51 +33,51 @@
 ## Code
 The code used for the Arxiv submission corresponds to the tag `used-for-arxiv-submission`.
 If you wish to reproduce the results, checkout that tag with `git checkout used-for-arxiv-submission`.
-The master branch is the latest version available.
+The `master` branch is the latest version available.
   
 ### Installation
-  Use conda to create a new environment using the environment.yml file:
+  Use conda to recreate the environment provided with the code:
 
 <pre>
-  conda env create
+conda env create -f environment.yml
 </pre>
 
   and install the tool:
 
 <pre>
-  pip install .
+pip install .
 </pre>
 
 ### Usage  
   Activate the environment:
 <pre>
-  conda  activate object-locator
+conda activate object-locator
 </pre>
 
   Run this to get help (usage instructions):
 <pre>
-  python -m object-locator.locate -h
-  python -m object-locator.train -h
+python -m object-locator.locate -h
+python -m object-locator.train -h
 </pre>
 
   Example:
 <pre>
-  python -m object-locator.locate \
-         --dataset DIRECTORY \
-         --out DIRECTORY \
-         --model CHECKPOINTS \
-         --evaluate \
-         --no-gpu \
-         --radius 5
+python -m object-locator.locate \
+       --dataset DIRECTORY \
+       --out DIRECTORY \
+       --model CHECKPOINTS \
+       --evaluate \
+       --no-gpu \
+       --radius 5
 
-  python -m object-locator.train \
-         --train-dir ~/data/20160613_F54_training_256x256 \
-         --batch-size 32 \
-         --env-name sorghum \
-         --lr 1e-3 \
-         --val-dir ~/data/plant_counts_random_patches/20160613_F54_validation_256x256 \
-         --optim Adam \
-         --save unet_model.ckpt
+python -m object-locator.train \
+       --train-dir ~/data/20160613_F54_training_256x256 \
+       --batch-size 32 \
+       --env-name sorghum \
+       --lr 1e-3 \
+       --val-dir ~/data/plant_counts_random_patches/20160613_F54_validation_256x256 \
+       --optim Adam \
+       --save unet_model.ckpt
 </pre>
 
 ### Uninstall
