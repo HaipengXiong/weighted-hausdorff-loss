@@ -31,6 +31,9 @@
   - [Plant dataset](https://engineering.purdue.edu/~sorghum/dataset-plant-centers-2016)
 
 ## Code
+The code used for the Arxiv submission corresponds to the tag `used-for-arxiv-submission`.
+If you wish to reproduce the results, checkout that tag with `git checkout used-for-arxiv-submission`.
+The master branch is the latest version available.
   
 ### Installation
   Use conda to create a new environment using the environment.yml file:
